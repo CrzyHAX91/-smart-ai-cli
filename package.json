@@ -1,0 +1,61 @@
+{
+  "name": "smart-ai-cli",
+  "version": "1.2.2",
+  "description": "A smart CLI tool powered by AI",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "smart-ai": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "NODE_ENV=test jest --config jest.config.cjs",
+    "lint": "eslint .",
+    "validate": "node scripts/validate-config.js",
+    "check-env": "node scripts/check-environment.js",
+    "build": "webpack --config webpack.config.js",
+    "version-sync": "node scripts/version-sync.js"
+  },
+  "keywords": [
+    "cli",
+    "ai",
+    "smart",
+    "assistant"
+  ],
+  "author": "CrzyHaxs91",
+  "license": "MIT",
+  "dependencies": {
+    "boxen": "^8.0.1",
+    "chalk": "^5.3.0",
+    "commander": "^13.1.0",
+    "dotenv": "^16.3.1",
+    "figlet": "^1.6.0",
+    "inquirer": "^9.2.11",
+    "node-fetch": "^3.3.2",
+    "openai": "^4.86.1",
+    "ora": "^7.0.1",
+    "replicate": "^1.0.1",
+    "semver": "^7.5.4",
+    "update-notifier": "^6.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.2",
+    "@babel/plugin-syntax-import-meta": "^7.10.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.23.0",
+    "@babel/plugin-transform-runtime": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
+    "@babel/runtime": "^7.23.2",
+    "@jest/globals": "^29.7.0",
+    "babel-jest": "^29.7.0",
+    "eslint": "^8.51.0",
+    "jest": "^29.7.0",
+    "jest-environment-node": "^29.7.0",
+    "nodemon": "^3.0.1",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^6.0.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
