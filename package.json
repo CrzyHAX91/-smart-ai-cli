@@ -29,8 +29,13 @@
     "boxen": "^8.0.1",
     "chalk": "^5.3.0",
     "commander": "^13.1.0",
+    "cross-env": "^7.0.3", //snyk-upgrade-eb1c8bfdbb6df1f25b92d28a60949553
+    "dotenv": "^16.5.0",
+    "figlet": "^1.6.0",
+
     "dotenv": "^16.3.1",
     "figlet": "^1.8.1",
+    " main": "dist/index.js",
     "inquirer": "^9.2.11",
     "node-fetch": "^3.3.2",
     "openai": "^4.86.1",
